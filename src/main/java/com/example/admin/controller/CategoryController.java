@@ -22,6 +22,7 @@ public class CategoryController {
     @PostMapping(value = "/addCategory")
     public String addCategory(Category category) {
         categoryService.addCategory(category);
+        System.out.println();
         return "redirect:/boxed-layout";
     }
 
